@@ -1,5 +1,5 @@
 /*
-
+      Git Title 
 Case with 3 sorting Algorithm
     * Insertion Sort
     * Merge Sort
@@ -131,25 +131,33 @@ int main()
         cout<<"Press 2: Merge Sort"<<endl;
         cout<<"Press 3: Quick Sort"<<endl;
         cout<<"Press 4: Exit"<<endl;
+        cout<<endl;
+        cout<<"Choose your option:";
         cin>>n;
 
         switch(n)
         {
         case 1:
             insertion_sort(arr,s);
+            cout<<"According to Insertion Sort, sorted data is: ";
             for(int  i=0; i<s; i++) cout<<arr[i]<<" ";
             cout<<endl;
             break;
         case 2:
             merge_sort(arr,s);
+            cout<<"According to Merge Sort, sorted data is: ";
             for(int  i=0; i<s; i++) cout<<arr[i]<<" ";
             cout<<endl;
             break;
         case 3:
-              quick_sort(arr,0,s-1);
-            for(int  i=0; i<s; i++) cout<<arr[i]<<" ";
+            quick_sort(arr,0,s-1);
+            cout<<"According to Qick Sort, sorted data is: ";
+            for(int i=0; i<s; i++) cout<<arr[i]<<" ";
             cout<<endl;
             break;
+        case 4: 
+           cout<<"Program terminated."<<endl;
+           break;
         }
 
     }

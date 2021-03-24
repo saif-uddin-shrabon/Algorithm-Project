@@ -1,3 +1,11 @@
+/*
+
+Case with 3 sorting Algorithm
+    * Insertion Sort
+    * Merge Sort
+    * Quick Sort
+    
+*/
 #include<bits/stdc++.h>
 #define ll long long int
 #define pb push_back

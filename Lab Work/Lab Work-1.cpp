@@ -110,9 +110,9 @@ void quick_sort(int arr[], int l, int h)
     if(l<h)
     {
         q = Partition(arr,l, h);
+         quick_sort(arr,l,q-1);
+         quick_sort(arr,q+1,h);
     }
-    quick_sort(arr,l,q-1);
-    quick_sort(arr,q+1,h);
 }
 
 int main()
@@ -156,4 +156,3 @@ int main()
     while(n!=4);
     return 0;
 }
-
